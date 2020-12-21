@@ -1,0 +1,59 @@
+###
+post http://localhost:3000/user/add
+Content-Type: application/json
+
+{
+    "firstname": "Janeta",
+    "lastname": "Paloma",
+    "email": "paloma@gmail.com",
+    "password": "password",
+    "username":"paloma",
+    "position": "admin"
+}
+###
+
+get http://localhost:3000/user/all
+
+###
+get http://localhost:3000/user/4
+
+
+###
+DELETE   http://localhost:3000/user/3
+
+###
+PATCH http://localhost:3000/user/4
+Content-Type: application/json
+
+{
+    "id": 1
+}
+
+###
+post http://localhost:3000/user/login
+Content-Type: application/json
+
+{
+    "username": "janedoe",
+    "password": "password"
+}
+
+//the above routes are functional
+######
+
+GET http://localhost:3000/product/all
+
+###
+POST http://localhost:3000/product/add
+Content-Type: application/json
+
+{
+    "product_name": "Test Product",
+    "product_category": "gadget",
+    "product_price": 12,
+    "product_stock": 12
+}
+
+//this is also fucntional already
+
+
